@@ -143,16 +143,6 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
-        win_gui_when_ralt: win_gui_when_ralt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "WIN_GUI_WHEN_RALT";
-            bindings =
-                <&kp BACKSPACE>,
-                <&kp LEFT_GUI>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
         go_mac: go_mac {
             compatible = "zmk,behavior-tap-dance";
             label = "GO_MAC";
@@ -162,15 +152,21 @@
                 <&none>,
                 <&tog 0>;
         };
-        alt_bckspc_spotlight: alt_bckspc_spotlight {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_BCKSPC_SPOTLIGHT";
-            bindings =
-                <&kp BACKSPACE>,
-                <&cmd_space_macro>;
+    };
 
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
+    combos {
+        compatible = "zmk,combos";
+
+        mac_spotlight {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <41 35>;
+            timeout-ms = <40>;
+            layers = <0 1 2>;
+        };
+
+        win_spotlight {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <35>;
         };
     };
 
@@ -186,7 +182,7 @@
 
             label = "mac";
             bindings = <
-&m_tab     &kp Q  &kp W  &kp E             &kp R         &kp T        &kp Y                  &kp U       &kp I             &kp O    &kp P     &alt_bckspc_spotlight
+&m_tab     &kp Q  &kp W  &kp E             &kp R         &kp T        &kp Y                  &kp U       &kp I             &kp O    &kp P     &kp BACKSPACE
 &m_caps    &kp A  &kp S  &kp D             &kp F         &kp G        &kp H                  &j_alt_tab  &k_alt_shift_tab  &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &kp N                  &kp M       &kp COMMA         &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                          &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE    &mt RIGHT_SHIFT ENTER  &mo 2       &kp RALT
@@ -227,7 +223,7 @@
 
         ms {
             bindings = <
-&m_tab     &kp Q  &kp W  &kp E             &kp R      &kp T        &kp Y                  &kp U       &kp I             &kp O    &kp P     &win_gui_when_ralt
+&m_tab     &kp Q  &kp W  &kp E             &kp R      &kp T        &kp Y                  &kp U       &kp I             &kp O    &kp P     &kp BACKSPACE
 &w_caps    &kp A  &kp S  &kp D             &kp F      &kp G        &kp H                  &j_alt_tab  &k_alt_shift_tab  &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C             &kp V      &kp B        &kp N                  &kp M       &kp COMMA         &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                          &kp LEFT_CONTROL  &kp LCTRL  &kp SPACE    &mt RIGHT_SHIFT ENTER  &mo 5       &kp RIGHT_ALT
