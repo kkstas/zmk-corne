@@ -28,6 +28,12 @@
             #binding-cells = <0>;
             bindings = <&kp LS(Z) &kp X &kp D &kp E &kp W &kp A &kp S &kp NUMBER_1 &kp NUMBER_2>;
         };
+        cmd_space_macro: cmd_space_macro {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_SPACE_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+        };
     };
 
     behaviors {
@@ -161,7 +167,7 @@
             label = "ALT_BCKSPC_SPOTLIGHT";
             bindings =
                 <&kp BACKSPACE>,
-                <&kp LG(SPACE)>;
+                <&cmd_space_macro>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
