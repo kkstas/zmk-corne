@@ -102,6 +102,22 @@
                 <&none>,
                 <&bt BT_CLR>;
         };
+        login_tap: login_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOGIN_TAP";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&login_macro>;
+        };
+        passw_tap: passw_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PASSW_TAP";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&passw_macro>;
+        };
     };
 
     keymap {
