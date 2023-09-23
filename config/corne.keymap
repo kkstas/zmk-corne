@@ -118,6 +118,15 @@
                 <&none>,
                 <&passw_macro>;
         };
+        go_windows: go_windows {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GO_WINDOWS";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&none>,
+                <&tog 3>;
+        };
     };
 
     keymap {
@@ -150,7 +159,7 @@
             bindings = <
 &trans  &trans     &trans    &kp LS(LC(TAB))  &kp LC(TAB)            &kp RS(RA(RC(RG(T))))    &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
 &none   &trans     &trans    &trans           &kp RS(RA(RC(RG(F))))  &login_macro             &kp LEFT            &kp DOWN            &kp UP               &kp RIGHT            &kp C_VOLUME_UP       &kp C_BRI_UP
-&trans  &bt_clear  &bt_prev  &bt_next         &trans                 &passw_macro             &kp LA(BACKSPACE)   &kp BACKSPACE       &kp DELETE           &kp LA(DELETE)       &kp C_VOLUME_DOWN     &kp C_BRI_DN
+&trans  &bt_clear  &bt_prev  &bt_next         &go_windows            &passw_macro             &kp LA(BACKSPACE)   &kp BACKSPACE       &kp DELETE           &kp LA(DELETE)       &kp C_VOLUME_DOWN     &kp C_BRI_DN
                              &trans           &trans                 &trans                   &trans              &trans              &trans
             >;
         };
