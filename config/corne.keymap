@@ -224,8 +224,8 @@
             bindings = <
 &kp LA(LC(DELETE))  &trans     &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans        &kp HOME           &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp END         &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)
 &none               &trans     &trans    &trans           &trans       &login_tap    &kp LEFT           &kp DOWN            &kp UP               &kp RIGHT       &kp C_VOLUME_UP     &kp C_BRI_UP
-&trans              &bt_clear  &bt_prev  &bt_next         &go_mac      &passw_tap    &kp LC(BACKSPACE)  &kp BACKSPACE       &kp DELETE           &kp LC(DELETE)  &kp C_VOLUME_DOWN   &kp C_BRI_DN
-                                         &trans           &none        &trans        &trans             &trans              &trans
+&kp LSHFT           &bt_clear  &bt_prev  &bt_next         &go_mac      &passw_tap    &kp LC(BACKSPACE)  &kp BACKSPACE       &kp DELETE           &kp LC(DELETE)  &kp C_VOLUME_DOWN   &kp C_BRI_DN
+                                         &kp LCTRL        &kp LCTRL    &kp SPACE     &kp ENTER          &trans              &kp RIGHT_ALT
             >;
 
             label = "ms__caps";
@@ -236,7 +236,7 @@
 &kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN  &kp POUND         &kp DOLLAR        &kp PERCENT    &kp CARET              &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK   &kp BSPC
 &grave_nomod    &kp N1           &kp N2       &kp N3            &kp N4            &kp N5         &kp EQUAL              &kp MINUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LBKT       &kp RBKT
 &kp LEFT_SHIFT  &kp N6           &kp N7       &kp N8            &kp N9            &kp N0         &kp PLUS               &kp UNDER      &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH  &kp PIPE
-                                              &kp LEFT_CONTROL  &kp LEFT_CONTROL  &kp SPACE      &mt RIGHT_SHIFT ENTER  &none          &trans
+                                              &kp LEFT_CONTROL  &kp LEFT_CONTROL  &kp SPACE      &mt RIGHT_SHIFT ENTER  &none          &kp RIGHT_ALT
             >;
 
             label = "ms__hold";
