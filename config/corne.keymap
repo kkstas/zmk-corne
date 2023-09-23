@@ -186,10 +186,10 @@
 
             label = "mac__caps";
             bindings = <
-&trans          &trans     &trans    &kp LS(LC(TAB))  &kp LC(TAB)            &kp RS(RA(RC(RG(T))))    &kp LG(LEFT_ARROW)     &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
-&none           &trans     &trans    &trans           &kp RS(RA(RC(RG(F))))  &login_macro             &kp LEFT               &kp DOWN            &kp UP               &kp RIGHT            &kp C_VOLUME_UP       &kp C_BRI_UP
-&kp LEFT_SHIFT  &bt_clear  &bt_prev  &bt_next         &go_windows            &passw_macro             &kp LA(BACKSPACE)      &kp BACKSPACE       &kp DELETE           &kp LA(DELETE)       &kp C_VOLUME_DOWN     &kp C_BRI_DN
-                                     &kp LCTRL        &kp LGUI               &kp SPACE                &mt RIGHT_SHIFT ENTER  &trans              &kp RIGHT_ALT
+&trans          &kp RS(RA(RC(RG(Q))))  &kp RS(RA(RC(RG(W))))  &kp LS(LC(TAB))        &kp LC(TAB)            &kp RS(RA(RC(RG(T))))    &kp LG(LEFT_ARROW)     &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
+&none           &kp RS(RA(RC(RG(A))))  &kp RS(RA(RC(RG(S))))  &kp RS(RA(RC(RG(D))))  &kp RS(RA(RC(RG(F))))  &login_macro             &kp LEFT               &kp DOWN            &kp UP               &kp RIGHT            &kp C_VOLUME_UP       &kp C_BRI_UP
+&kp LEFT_SHIFT  &bt_clear              &bt_prev               &bt_next               &go_windows            &passw_macro             &kp LA(BACKSPACE)      &kp BACKSPACE       &kp DELETE           &kp LA(DELETE)       &kp C_VOLUME_DOWN     &kp C_BRI_DN
+                                                              &kp LCTRL              &kp LGUI               &kp SPACE                &mt RIGHT_SHIFT ENTER  &trans              &kp RIGHT_ALT
             >;
         };
 
