@@ -147,6 +147,15 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
+        go_mac: go_mac {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GO_MAC";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&none>,
+                <&tog 0>;
+        };
     };
 
     keymap {
@@ -213,10 +222,10 @@
 
         ms__caps {
             bindings = <
-&kp LA(LC(DELETE))  &trans  &trans  &kp LC(LS(TAB))  &kp LC(TAB)  &trans    &kp HOME           &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp END         &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)
-&trans              &trans  &trans  &trans           &trans       &trans    &kp LEFT           &kp DOWN            &kp UP               &kp RIGHT       &kp C_VOLUME_UP     &kp C_BRI_UP
-&trans              &trans  &trans  &trans           &trans       &trans    &kp LC(BACKSPACE)  &kp BACKSPACE       &kp DELETE           &kp LC(DELETE)  &kp C_VOLUME_DOWN   &kp C_BRI_DN
-                                    &trans           &trans       &trans    &trans             &trans              &trans
+&kp LA(LC(DELETE))  &trans     &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans        &kp HOME           &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp END         &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)
+&trans              &trans     &trans    &trans           &trans       &login_tap    &kp LEFT           &kp DOWN            &kp UP               &kp RIGHT       &kp C_VOLUME_UP     &kp C_BRI_UP
+&trans              &bt_clear  &bt_prev  &bt_next         &go_mac      &passw_tap    &kp LC(BACKSPACE)  &kp BACKSPACE       &kp DELETE           &kp LC(DELETE)  &kp C_VOLUME_DOWN   &kp C_BRI_DN
+                                         &trans           &trans       &trans        &trans             &trans              &trans
             >;
 
             label = "ms__caps";
