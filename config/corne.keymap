@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -71,6 +72,35 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
             keep-mods = <(MOD_RALT)>;
+        };
+        bt_next: bt_next {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_NEXT";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&none>,
+                <&bt BT_NXT>;
+        };
+        bt_prev: bt_prev {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_PREV";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&none>,
+                <&bt BT_PRV>;
+        };
+        bt_clear: bt_clear {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_CLEAR";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&none>,
+                <&none>,
+                <&none>,
+                <&bt BT_CLR>;
         };
     };
 
