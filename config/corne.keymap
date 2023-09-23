@@ -90,10 +90,10 @@
 
             label = "mac__caps";
             bindings = <
-&trans     &trans  &trans  &kp LS(LC(TAB))  &kp LC(TAB)            &kp RS(RA(RC(RG(T))))    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&none      &trans  &trans  &trans           &kp RS(RA(RC(RG(F))))  &trans                   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans           &trans                 &trans                   &trans    &trans    &trans    &trans     &trans  &trans
-                           &trans           &trans                 &kp SPACE                &kp RET   &trans    &kp RALT
+&trans  &trans  &trans  &kp LS(LC(TAB))  &kp LC(TAB)            &kp RS(RA(RC(RG(T))))    &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &kp N0  &kp BSPC
+&none   &trans  &trans  &trans           &kp RS(RA(RC(RG(F))))  &trans                   &kp LEFT            &kp DOWN            &kp UP               &kp RIGHT            &trans  &trans
+&trans  &trans  &trans  &trans           &trans                 &trans                   &kp LA(BACKSPACE)   &kp BACKSPACE       &trans               &trans               &trans  &trans
+                        &trans           &trans                 &trans                   &trans              &trans              &trans
             >;
         };
 
