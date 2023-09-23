@@ -192,10 +192,10 @@
 
         ms {
             bindings = <
-&m_tab     &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&w_caps    &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &trans  &trans  &trans    &trans  &trans  &trans
+&m_tab     &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y                  &kp U       &kp I             &kp O    &kp P     &kp BSPC
+&w_caps    &kp A  &kp S  &kp D      &kp F      &kp G        &kp H                  &j_alt_tab  &k_alt_shift_tab  &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N                  &kp M       &kp COMMA         &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                         &kp LCTRL  &kp LCTRL  &kp SPACE    &mt RIGHT_SHIFT ENTER  &mo 5       &kp RIGHT_ALT
             >;
 
             label = "ms";
