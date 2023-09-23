@@ -213,10 +213,10 @@
 
         ms__caps {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp END  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans              &trans               &trans   &kp C_VOLUME_UP     &kp C_BRI_UP
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans              &trans               &trans   &kp C_VOLUME_DOWN   &kp C_BRI_DN
+                        &trans  &trans  &trans    &trans    &trans              &trans
             >;
 
             label = "ms__caps";
