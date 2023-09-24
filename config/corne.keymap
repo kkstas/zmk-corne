@@ -160,13 +160,15 @@
         mac_spotlight {
             bindings = <&kp LG(SPACE)>;
             key-positions = <41 35>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             layers = <0 1 2>;
         };
 
         win_spotlight {
             bindings = <&kp LEFT_GUI>;
             key-positions = <35>;
+            layers = <3 4 5>;
+            timeout-ms = <50>;
         };
     };
 
