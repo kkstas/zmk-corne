@@ -176,7 +176,7 @@
 
         win_spotlight {
             bindings = <&win_gui_macro>;
-            key-positions = <35>;
+            key-positions = <35 41>;
             layers = <3 4 5>;
             timeout-ms = <100>;
         };
