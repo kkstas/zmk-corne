@@ -34,6 +34,12 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
         };
+        win_gui_macro: win_gui_macro {
+            compatible = "zmk,behavior-macro";
+            label = "WIN_GUI_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI>;
+        };
     };
 
     behaviors {
@@ -164,15 +170,15 @@
         mac_spotlight {
             bindings = <&kp LG(SPACE)>;
             key-positions = <41 35>;
-            timeout-ms = <50>;
+            timeout-ms = <70>;
             layers = <0 1 2>;
         };
 
         win_spotlight {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&win_gui_macro>;
             key-positions = <35>;
             layers = <3 4 5>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
     };
 
