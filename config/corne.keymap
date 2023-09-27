@@ -139,7 +139,7 @@
                 <&none>,
                 <&tog 3>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <200>;
         };
         w_caps: w_caps {
             compatible = "zmk,behavior-mod-morph";
@@ -160,7 +160,7 @@
                 <&none>,
                 <&tog 0>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <200>;
         };
     };
 
