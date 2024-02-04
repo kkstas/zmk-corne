@@ -17,25 +17,11 @@
             bindings = <&kp GRAVE>;
         };
 
-        login_macro: login_macro {
-            compatible = "zmk,behavior-macro";
-            label = "LOGIN_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp K &kp S &kp T &kp A &kp S &kp I &kp A &kp K>;
-        };
-
-        passw_macro: passw_macro {
-            compatible = "zmk,behavior-macro";
-            label = "PASSW_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp LS(Z) &kp X &kp D &kp E &kp W &kp A &kp S &kp NUMBER_1 &kp NUMBER_2>;
-        };
-
         cmd_space_macro: cmd_space_macro {
             compatible = "zmk,behavior-macro";
             label = "CMD_SPACE_MACRO";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&kp LA(SPACE)>;
         };
 
         win_gui_macro: win_gui_macro {
@@ -106,29 +92,6 @@
             bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_CLR>;
         };
 
-        login_tap: login_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LOGIN_TAP";
-            #binding-cells = <0>;
-            bindings = <&none>, <&login_macro>;
-        };
-
-        passw_tap: passw_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "PASSW_TAP";
-            #binding-cells = <0>;
-            bindings = <&none>, <&passw_macro>;
-        };
-
-        go_windows: go_windows {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GO_WINDOWS";
-            #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&tog 0>;
-
-            tapping-term-ms = <200>;
-        };
-
         w_caps: w_caps {
             compatible = "zmk,behavior-mod-morph";
             label = "W_CAPS";
@@ -137,31 +100,16 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
-
-        go_mac: go_mac {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GO_MAC";
-            #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&tog 0>;
-
-            tapping-term-ms = <200>;
-        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         mac_spotlight {
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&kp LA(SPACE)>;
             key-positions = <41 35>;
             timeout-ms = <70>;
             layers = <0 1 2>;
-        };
-
-        win_spotlight {
-            bindings = <&win_gui_macro>;
-            key-positions = <35 41>;
-            timeout-ms = <100>;
         };
     };
 
