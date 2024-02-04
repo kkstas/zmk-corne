@@ -54,21 +54,19 @@
         j_alt_tab: j_alt_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "J_ALT_TAB";
-            bindings = <&kp J>, <&kp TAB>;
+            bindings = <&kp J>, <&kp LA(TAB)>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_RALT)>;
             mods = <(MOD_RALT)>;
         };
 
         k_alt_shift_tab: k_alt_shift_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "K_ALT_SHIFT_TAB";
-            bindings = <&kp K>, <&kp LS(TAB)>;
+            bindings = <&kp K>, <&kp LS(LA(TAB))>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
-            keep-mods = <(MOD_RALT)>;
         };
 
         bt_next: bt_next {
